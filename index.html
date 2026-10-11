@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PTU Manager</title>
+    <meta
+        name="description"
+        content="Herramientas en español para Pokémon Tabletop United."
+    >
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-layout">
+
+        <!-- Navegación lateral -->
+        <aside class="sidebar">
+            <a class="brand" href="#inicio">
+                <span class="brand-icon">P</span>
+                <span>
+                    <strong>PTU Manager</strong>
+                    <small>TABLETOP UNITED</small>
+                </span>
+            </a>
+
+            <p class="nav-heading">ESPACIO DE TRABAJO</p>
+
+            <nav class="navigation" aria-label="Navegación principal">
+                <a class="nav-link active" href="#inicio">
+                    <span>⌂</span> Inicio
+                </a>
+                <a class="nav-link" href="#biblioteca">
+                    <span>▤</span> Biblioteca
+                </a>
+                <a class="nav-link" href="#pokedex">
+                    <span>◎</span> Pokédex
+                </a>
+                <a class="nav-link" href=#Mesa>
+                    <span class="nav-icon">⚃</span> Mesa de juego
+                </a>
+                <a class="nav-link" href="#entrenadores">
+                    <span>♙</span> Entrenadores
+                </a>
+                <a class="nav-link" href="#herramientas">
+                    <span>⚔</span> Herramientas
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <span class="status-dot"></span>
+                <span>Proyecto en desarrollo</span>
+                <small>v0.1</small>
+            </div>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content" id="inicio">
+
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">TU CENTRO DE CAMPAÑA</p>
+                    <h1>Panel de control</h1>
+                </div>
+
+                <span class="version-tag">VERSIÓN 0.1</span>
+            </header>
+
+            <section class="welcome">
+                <div class="welcome-content">
+                    <p class="eyebrow">POKÉMON TABLETOP UNITED</p>
+
+                    <h2>Tu próxima aventura<br>
+                        empieza aquí.</h2>
+
+                    <p class="welcome-description">
+                        Reúne las reglas, consulta Pokémon y prepara
+                        tus personajes desde un solo lugar.
+                    </p>
+
+                    <a class="primary-button" href="#biblioteca">
+                        Explorar la biblioteca <span>→</span>
+                    </a>
+                </div>
+
+                <div class="welcome-symbol" aria-hidden="true">
+                    <span>PTU</span>
+                    <div class="symbol-ring"></div>
+                </div>
+            </section>
+
+            <section class="dashboard-section" id="biblioteca">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">ACCESO RÁPIDO</p>
+                        <h2>¿Qué necesitas consultar?</h2>
+                    </div>
+                    <span class="section-count">04 MÓDULOS</span>
+                </div>
+
+                <div class="module-grid">
+
+                    <a class="module-card" href="#biblioteca">
+                        <span class="module-icon">▤</span>
+                        <span class="module-label">01 / REFERENCIA</span>
+                        <h3>Biblioteca</h3>
+                        <p>Clases, rasgos, objetos y reglas de PTU.</p>
+                        <span class="card-action">Explorar <span>↗</span></span>
+                    </a>
+
+                    <a class="module-card" href="#pokedex" id="pokedex">
+                        <span class="module-icon">◎</span>
+                        <span class="module-label">02 / ENCICLOPEDIA</span>
+                        <h3>Pokédex</h3>
+                        <p>Consulta los datos de los Pokémon.</p>
+                        <span class="card-action">Consultar <span>↗</span></span>
+                    </a>
+
+                    <a class="module-card" href="#entrenadores" id="entrenadores">
+                        <span class="module-icon">♙</span>
+                        <span class="module-label">03 / PERSONAJES</span>
+                        <h3>Entrenadores</h3>
+                        <p>Prepara fichas, clases y progresión.</p>
+                        <span class="card-action">Gestionar <span>↗</span></span>
+                    </a>
+
+                    <a class="module-card" href="#Mesa" id="Mesa">
+                        <span class="module-icon">⚔</span>
+                        <span class="module-label">04 / Partidas</span>
+                        <h3>Mesa de juego</h3>
+                        <p>Campañas, herramientas del DM, dados y cálculos de combate.</p></p>
+                        <span class="card-action">Entrar <span>↗</span></span>
+                    </a>
+
+                </div>
+            </section>
+
+            <section class="development-note">
+                <span class="note-indicator"></span>
+                <div>
+                    <h3>La aventura apenas comienza</h3>
+                    <p>
+                        Estamos construyendo la base. Los módulos
+                        se conectarán a datos y funciones reales
+                        en las siguientes etapas.
+                    </p>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <span>PTU Manager · Proyecto comunitario</span>
+                <span>Hecho para organizar tus partidas.</span>
+            </footer>
+
+        </main>
+    </div>
+</body>
+</html>
