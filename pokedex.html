@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex · PTU Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-layout">
+
+        <aside class="sidebar">
+            <a class="brand" href="index.html">
+                <span class="brand-icon">P</span>
+                <span>
+                    <strong>PTU Manager</strong>
+                    <small>TABLETOP UNITED</small>
+                </span>
+            </a>
+
+            <p class="nav-heading">ESPACIO DE TRABAJO</p>
+
+            <nav class="navigation" aria-label="Navegación principal">
+                <a class="nav-link" href="index.html">
+                    <span>⌂</span> Inicio
+                </a>
+                <a class="nav-link active" href="pokedex.html">
+                    <span>◎</span> Pokédex
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">ENCICLOPEDIA</p>
+                    <h1>Pokédex</h1>
+                </div>
+            </header>
+            <input
+                type="search"
+                id="buscador"
+                class="search-input"
+                placeholder="Buscar Pokémon..."
+            >
+
+            <div id="pokedex-lista">Cargando...</div>
+        </main>
+    </div>
+
+    <script src="js/pokedex.js"></script>
+</body>
+</html>
