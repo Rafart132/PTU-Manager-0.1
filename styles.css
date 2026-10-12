@@ -623,3 +623,51 @@ h1 {
     color: var(--muted);
     font-size: 12px;
 }
+
+/* =================================
+   11. FICHA DE POKÉMON
+   ================================= */
+
+#ficha {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+@media (min-width: 900px) {
+    #ficha {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.ficha-seccion {
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--panel);
+}
+
+.ficha-seccion h2 {
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    color: var(--accent);
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.ficha-fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 6px 0;
+}
+
+.ficha-fila span {
+    color: var(--muted);
+}
+
+.ficha-fila strong {
+    text-align: right;
+}

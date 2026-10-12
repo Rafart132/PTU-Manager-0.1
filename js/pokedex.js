@@ -45,8 +45,9 @@ function mostrarPokemon(pokemon) {
 }
 
 function crearTarjeta(p) {
-    const tarjeta = document.createElement("article");
-    tarjeta.className = "pokemon-card";
+    const tarjeta = document.createElement("a");
+        tarjeta.className = "pokemon-card";
+        tarjeta.href = "pokemon.html?id=" + p.Id;
 
     const tipos = [p.Tipo1, p.Tipo2].filter(Boolean);
     const etiquetasTipo = tipos
